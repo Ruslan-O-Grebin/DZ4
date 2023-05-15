@@ -1,0 +1,462 @@
+/* Спільна частина всіх сторінок сайту */
+
+    /* Підключення кольорів тексту та фону (через змінні) */
+
+        :root {
+            --full-black-color:#000000;
+            --full-white-color:#FFFFFF;
+            
+            --basic-blue-color:#2196F3;
+            --basic-black-color:#212121;
+            --basic-gray-color:#757575;
+
+            --additional-background-gray-color:#2F303A;
+            --additional-gray-color:#F5F4FA;
+            --additional-white-color:rgba(255, 255, 255, 0.6);
+            --additional-blue-color:#188CE8;  
+            --additional-purple-color:#800080;   
+
+            }
+
+    /* Загальні властивості об'єктів*/
+            
+        html {
+            box-sizing: border-box;
+            }  
+            
+        *,
+        *::before,
+        *::after {
+                 box-sizing: inherit;
+                }
+
+        body {
+            background-color: var(--full-white-color);
+            color: var(--basic-black-color);
+
+            font-family:'Roboto', sans-serif;
+            letter-spacing: 0.03em;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 1.2;
+            }
+
+        h1, h2, h3, h4, p {
+                            margin: 0;
+                            padding: 0;
+                        }    
+
+        .container {
+                    width: 1200px;
+                    padding: 0 15px;
+                    margin: 0 auto;
+                 }
+
+        .list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            }
+
+        .button {
+                background-color: var(--basic-blue-color);
+                color: var(--full-white-color);
+
+                min-width: 220px;
+                height: 50px;
+                padding: 10px 32px;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                }
+
+        .button:hover,
+        .button:focus {
+                    background-color:var(--additional-blue-color)
+                     }
+
+        .section {
+                padding-bottom: 100px;
+                }            
+
+        .section-title {
+                    color:var(--basic-black-color);
+                    
+                    font-weight: 700;
+                    font-size: 36px;
+                    
+                    text-align: center; 
+                    margin-top: 0; 
+                    margin-bottom: 50px;                    
+                    }
+
+/* Головна сторінка сайту (Студія) */
+        
+        /* Шапка з основними посиланнями*/
+        
+        header {
+                border-bottom: 1px solid #ECECEC;
+                 }
+
+        .hat {
+            display: flex;
+            align-items: center;
+
+            height: 80px;
+            
+            }
+
+        .nav-site {
+                 display: flex;
+                    }
+
+            /* Логотип */
+
+            .logo {
+                color: var(--full-black-color);
+               
+                text-decoration: none;
+                font-family: 'Raleway';
+                font-weight: 700;
+                font-size: 26px;
+
+                }
+
+            .add-logo {
+                    color: var(--basic-blue-color);
+                    }
+
+            /* Вкладки  */
+
+            .site-nav {
+                        display: flex;
+                        margin-left: 100px;
+                        align-items: center;
+                         }
+
+            .site-nav .item:not(:last-child) {
+                                            margin-right: 50px;
+                                            }
+
+            .site-nav .link:hover,
+            .site-nav .link:focus {
+                            color: var(--basic-blue-color);
+                             }
+
+            .site-nav .link {
+                        text-decoration: none;
+                        color: var(--basic-black-color);
+
+                        font-weight: 500;
+
+                        padding: 10px 0;
+                         }                
+           
+            .site-nav .link.current {
+                                color: var(--basic-blue-color);
+                                }
+
+            /* Авторизація */
+
+            .auth-nav {
+                        display: flex;
+                        margin-left: auto;
+                        }
+                        
+            
+            .auth-nav .item:not(:last-child)  {
+                                            margin-right: 50px;
+                                            }
+
+            .auth-nav .link:hover,
+            .auth-nav .link:focus {
+                                color:var(--basic-blue-color);
+                                 }
+
+            .auth-nav .link {
+                            text-decoration: none;
+                            color: var(--basic-gray-color);
+
+                            font-weight: 500;
+
+                            padding: 10px 0;
+                            }   
+                            
+        /* Основний банер (Hero) */
+
+            .hero {
+                 background-color: var(--additional-background-gray-color);
+                 
+                 text-align: center; 
+                 padding: 200px 0;
+                }
+
+            .hero-title {
+                    color: var(--full-white-color);
+                    
+                    width: 700px;
+
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 1.35;                               
+                    letter-spacing:0.06em;
+                    
+                    text-transform: uppercase;
+                    margin: 0 auto 30px auto;
+                   
+                    
+                    
+                     }
+
+            .button.primary {
+                        font-family: 'Roboto';
+                        font-size: 16px;
+                        font-weight: 700;
+                        line-height: 1.5;
+                        letter-spacing: 0.06em;
+
+                        display: inline-block;
+                        cursor: pointer;
+                                 
+                        }
+
+        /* Блок - Особливості роботи компанії */
+            
+            .hidden {
+                    display: none;
+                    }
+
+            .features-work {
+                            display: flex;
+
+                            padding-top: 100px;
+                            }
+
+            .features-work .item:not(:last-child) {
+                                                margin-right: 30px;
+                                                }
+            
+            .features-work h3 {
+                            font-size: 14px;
+                            
+                            text-transform: uppercase;
+                            margin-bottom: 12px;
+                        }
+
+            .features-work p {
+                            color: var(--basic-gray-color);
+
+                            line-height: 1.5;
+                            } 
+            
+        /* Блок - Візуалізація роботи компанії */
+           
+            .visual {
+                    display:flex;
+                    } 
+                    
+            .visual .item:not(:last-child) {
+                                        margin-right: 27px;
+                                        }
+
+        /* Блок  - Команда співробітників */
+                                        
+            .section-team {
+                        background-color: var(--additional-gray-color);
+                        padding-top: 100px;
+                    }
+
+            .team {
+                   display: flex;
+                   justify-content: center; 
+                 }  
+            
+            .card-worker {
+                        background-color: var(--full-white-color);
+
+                        padding-bottom: 30px;
+
+                        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+                        border-radius: 0px 0px 4px 4px;
+                        }   
+
+            .card-worker:not(:last-child) {
+                                        margin-right: 30px;
+                                        }
+            .card-worker img {
+                             margin-bottom: 32px;
+                            } 
+
+            .team h3 {
+                    font-weight: 500;
+                    font-size: 16px;
+                                
+                    text-align: center;
+                    margin-bottom: 12px;
+                    }
+
+            .team p {
+                    color: var(--basic-gray-color);
+                    
+                    font-size: 16px;
+                                    
+                    text-align: center;                  
+                    }
+
+        /* Підвал з адресними даними та посиланням */
+                 
+        .footer {
+                background-color: var(--additional-background-gray-color);
+                
+                padding-top: 60px;
+                padding-bottom: 60px;
+                }
+
+            /* Логотип (дублювання)  */
+            
+            .footer .logo {
+                        color: var(--full-white-color); 
+                        
+                        display: inline-block;
+                        margin-bottom: 20px; 
+                        }
+
+            /* Адреса */
+
+            .address {
+                     font-style: normal;
+                    }
+
+            .address-item .link:hover,
+            .address-item .link:focus {
+                                color: var(--basic-blue-color);
+                                }
+
+            .address-item .link {
+                            text-decoration: none;
+                            color: var(--additional-white-color);
+                            }  
+
+            .address-item > li:not(:last-child) {
+                                            margin-bottom: 12px;
+                                            }
+
+                /* Геодані */
+
+                .address .geo-date {
+                            color: var(--full-white-color);
+                             }
+
+            
+/* Додаткова сторінка сайту (Портфоліо) */
+
+    /* Основне поле */
+    
+        /* Фільтр робіт */
+        
+        .filter {
+                display:flex;
+                justify-content: center; 
+                
+                margin-top: 100px;
+                margin-bottom: 50px;
+                }
+
+        .filter .item:not(:last-child) {
+                                    margin-right: 8px;
+                                    }           
+
+        .button-filter {
+            background-color: var(--additional-gray-color);
+            color: var(--basic-black-color);
+
+            width: fit-content;
+            height: 40px;
+            padding: 8px 25px;
+            border: none ;
+            border-radius: 4px;
+
+            font-family: 'Roboto';
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.5;
+            letter-spacing: 0.06em;
+
+            display: flex;
+            align-items: center;
+            text-align: center;  
+
+            cursor: pointer;
+            }
+
+        .button-filter:hover,
+        .button-filter:focus {
+                        background-color: var(--basic-blue-color);
+                        color: var(--full-white-color);
+                            }
+
+        .button-filter.current {
+                        background-color: var(--basic-blue-color);
+                        color: var(--full-white-color);
+                        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);    
+                        }
+
+        .button-filter.current:hover {
+                                     background-color: var(--additional-blue-color);     
+                                    }
+
+        /* Макети робіт */
+
+        .layouts-works {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+                    margin-bottom: 100px;
+                    }
+
+        .exampel {
+                width: calc( ( 100% - 60px ) / 3 ); 
+                }   
+                
+        .exampel:not(:nth-child(3n)) {
+                                    margin-right: 30px;
+                                     }
+
+        .exampel:not(:nth-last-child(-n+3)) {
+                                    margin-bottom: 30px;
+                                    }
+        .exampel img {
+                     vertical-align: bottom;
+                    }
+
+        .exampel-descr {
+                        border-bottom: 1px solid #EEEEEE;
+                        border-left: 1px solid #EEEEEE;
+                        border-right: 1px solid #EEEEEE;
+                        
+                        padding-top: 20px;
+                        }
+
+        .exampel h3 {
+                    color:var(--basic-black-color);
+
+                    font-weight: 700;
+                    font-size: 18px;
+                    line-height: 1.5;
+                    letter-spacing: 0.06em;
+
+                    margin: 0 24px 4px 24px;
+                    }
+
+        .exampel p {
+                color:var(--basic-gray-color);    
+                
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 1.5;
+                letter-spacing: 0.03em;
+
+                margin: 0 24px 20px 24px;
+                }
+
+       

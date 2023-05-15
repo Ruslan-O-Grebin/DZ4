@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+    <!-- Підключення шрифтів -->
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Підключення стилів -->
+
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+     
+      <link rel="stylesheet" href="./css/styles.css">
+
+  </head>
+
+  <body>
+
+      <!-- Шапка з основними посиланнями -->
+
+        <header>     
+          <div class=" hat container">   
+            <nav class="nav-site">               
+              
+              <!-- Логотип -->                 
+              <a href="./index.html" class="logo"><span class="add-logo">Web</span>Studio</a>     
+             
+              <!-- Вкладки -->            
+              <ul class="site-nav list">
+                <li class="item"><a href="./index.html" class="link current">Студія</a></li>
+                <li class="item"><a href="./portfolio.html" class="link ">Портфоліо</a></li>
+                <li class="item"><a href="#" class="link">Контакти</a></li>
+              </ul>  
+            </nav>
+    
+            <!-- Авторизація -->
+            <ul class="auth-nav list">
+              <li class="item"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+              <li class="item"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            </ul>    
+          </div>    
+        </header>
+  
+      <!-- Основне поле -->
+  
+      <main>
+  
+         <!-- Основний банер -->  
+          <section class="hero">
+            <div class="container">
+              <h1 class="hero-title">
+                Ефективні рішення для вашого бізнесу
+              </h1>
+              <button type="button" class="button primary">Замовити послугу</button>
+            </div>
+          </section>
+  
+        <!-- Блок - Особливості роботи компанії--> 
+        <section class="section">
+          <div class="container">
+            <h2 class="section-title hidden">Особливості</h2>
+            <ul class="features-work list">
+              <li class="item">
+                <h3>Увага до деталей</h3>
+                <p>Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+              </li>
+              <li class="item">
+                <h3>Пунктуальність</h3>
+                <p>Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+              </li>
+              <li class="item">
+                <h3>Планування</h3>
+                <p>Так само консультація з широким активом значною мірою зумовлює.</p>
+              </li>
+              <li class="item">
+                <h3>Сучасні технології</h3>
+                <p>Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+        <!-- Блок - Візуалізація роботи компанії -->  
+        <section class="section">
+          <div class="container">
+              <h2 class="section-title">Чим ми займаємося</h2>
+              <ul class="visual list">
+                <li class="item">
+                  <img
+                    src="./images/box-1.jpg"
+                    alt="manager's workplace"
+                    width="372">
+                </li>
+                <li class="item">
+                  <img
+                    src="./images/box-2.jpg"
+                    alt="business application in mobile and PC"
+                    width="372">
+                </li>
+                <li class="item">
+                  <img
+                    src="./images/box-3.jpg"
+                    alt="solving business problems on a tablet"
+                    width="372">
+                </li>
+              </ul>
+          </div>
+        </section>
+  
+        <!-- Блок  - Команда співробітників-->  
+        <section class="section section-team">
+          <div class="container">
+            <h2 class="section-title">Наша команда</h2>
+            <ul class="team list">
+              <li class="card-worker">
+                <img src="./images/img-1.jpg" alt="Product Designer" width="270">
+                <h3>Ігор Дем'яненко</h3>
+                <p>Product Designer</p>
+              </li>
+              <li class="card-worker">
+                <img src="./images/img-2.jpg" alt="Frontend Developer" width="270">
+                <h3>Ольга Рєпіна</h3>
+                <p>Frontend Developer</p>
+              </li>
+              <li class="card-worker">
+                <img src="./images/img-3.jpg" alt="Marketing" width="270">
+                <h3>Микола Тарасов</h3>
+                <p>Marketing</p>
+              </li>
+              <li class="card-worker">
+                <img src="./images/img-4.jpg" alt="UI Designer" width="270">
+                <h3>Михайло Єрмаков</h3>
+                <p>UI Designer</p>
+              </li>
+            </ul>
+          </div>
+        </section>
+  
+      </main>
+  
+      <!-- Підвал з адресними даними та посиланням --> 
+       
+      <footer class="footer">  
+        <div class="container">
+
+          <!-- Логотип (дублювання) -->  
+          <a href="./index.html" class="logo"><span class="add-logo">Web</span>Studio</a>
+    
+          <!-- Адреса -->    
+          <address class="address">
+            <ul class="address-item list">
+    
+              <!-- Геодані -->   
+              <li><a href="https://goo.gl/maps/CzCqxvyVuNfkv8wH7" 
+                  class="geo-date link" 
+                  target="_blank">м. Київ, пр-т Лесі Українки, 26</a></li>
+    
+              <!-- Авторизація (дублювання) -->    
+              <li><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a></li>
+              <li><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+            </ul>
+          </address>  
+        </div>
+      </footer>
+
+  </body>
+</html>
